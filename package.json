@@ -1,5 +1,5 @@
 {
-  "homepage": "http://eleon024.github.io/ema_react_app",
+  "homepage": "https://github.com/cwcross/ema_react_app",
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
@@ -24,16 +24,17 @@
     "customize-cra": "^1.0.0",
     "gh-pages": "^5.0.0",
     "null-loader": "^4.0.1",
+    "react-app-rewired": "^2.2.1",
     "typescript": "4.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test --env=jsdom",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "browserslist": [
     ">0.2%",
     "not dead",
